@@ -1,13 +1,13 @@
-# 🧠 Laboratório de IA com Azure Speech Studio e Language Studio
+# 🧠 Laboratório de IA com Azure Speech Studio, Language Studio e Document Intelligence
 
-Este repositório foi criado como parte do laboratório prático proposto no curso da DIO, com o objetivo de aplicar e aprofundar os conhecimentos adquiridos sobre Inteligência Artificial (IA), Processamento de Linguagem Natural e Análise de Fala utilizando ferramentas da Microsoft Azure.
+Este repositório foi criado como parte dos laboratórios práticos propostos no curso da DIO, com o objetivo de aplicar e aprofundar os conhecimentos adquiridos sobre Inteligência Artificial (IA), Processamento de Linguagem Natural, Análise de Fala e Mineração de Conhecimento utilizando ferramentas da Microsoft Azure.
 
 ## 🎯 Objetivos
 
-- Aplicar conceitos fundamentais de Inteligência Artificial em um ambiente prático;
-- Utilizar as ferramentas Azure Speech Studio e Azure Language Studio;
-- Documentar os processos e aprendizados de forma clara e estruturada;
-- Compartilhar o conhecimento através do GitHub como material de apoio e referência futura.
+- Aplicar os conceitos fundamentais de IA em ambientes práticos;
+- Utilizar ferramentas como Azure Speech Studio, Language Studio e Document Intelligence;
+- Documentar as etapas técnicas com clareza e estrutura;
+- Utilizar o GitHub como ferramenta para organização e compartilhamento de conhecimento técnico.
 
 ---
 
@@ -49,41 +49,70 @@ A criação e o uso de soluções baseadas em IA devem seguir princípios ético
 
 ## 🛠️ Relato da Experiência Prática
 
-Durante o laboratório, construí um ambiente prático utilizando os serviços do Azure Speech Studio e Language Studio. A seguir, descrevo as etapas principais e os aprendizados obtidos:
+Durante os laboratórios, desenvolvi ambientes práticos com os seguintes serviços da Azure:
 
-1. **Criação do recurso no Azure**  
-   Iniciei criando um recurso de "Speech" e outro de "Language" no portal do Azure. Esses recursos me forneceram as chaves de acesso e endpoints necessários para testar os serviços.
+### 🔊 Speech Studio
+- Criação de modelos de conversão de texto em fala (Text-to-Speech) e fala em texto (Speech-to-Text);
+- Ajuste de entonação, pausas e pronúncia;
+- Gravações com diferentes vozes e sotaques.
 
-2. **Speech Studio – Conversão de Texto em Fala e vice-versa**  
-   Utilizei o Speech Studio para testar a conversão de texto em fala (Text-to-Speech) e fala em texto (Speech-to-Text). Gravei frases com diferentes tons de voz e testei com modelos prontos e personalizados. Foi possível ajustar a pronúncia, velocidade e entonação, tornando a experiência bastante realista.
+### 💬 Language Studio
+- Análise de sentimentos;
+- Detecção de entidades nomeadas (NER);
+- Identificação de informações pessoais (PII);
+- Tradução automática e detecção de idioma;
+- Respostas a perguntas com base em documentos.
 
-3. **Language Studio – Análise de Texto e Detecção de Entidades**  
-   No Language Studio, explorei diversas funcionalidades:
-   - Detectei sentimentos em textos (positivo, negativo, neutro);
-   - Identifiquei entidades nomeadas (NER), como nomes de pessoas, locais e datas;
-   - Realizei a detecção de informações sensíveis (PII) e de saúde (PHI);
-   - Usei a funcionalidade de respostas a perguntas para simular um chatbot baseado em documentos.
-
-4. **Tradução e Detecção de Idioma**  
-   Também testei a tradução automática de textos entre diferentes idiomas e a detecção automática do idioma inserido. O sistema respondeu rapidamente e com boa precisão.
-
-5. **Organização dos Resultados e Insights**  
-   Durante os testes, anotei os resultados, erros, limitações e pontos fortes de cada funcionalidade, e coletei prints e logs para documentar o processo neste repositório.
+### 📄 Document Intelligence e Mineração de Conhecimento
+- Uso do **Azure Document Intelligence** para análise de formulários PDF digitalizados;
+- Treinamento de **modelos personalizados** com amostras de documentos;
+- Uso de modelos pré-treinados para faturas, recibos, e identidades;
+- Exploração da **Azure Cognitive Search** para ingestão de dados, enriquecimento com IA e criação de índices pesquisáveis;
+- Aplicação de **conjuntos de habilidades cognitivas** para identificar entidades, traduzir textos e avaliar sentimentos.
 
 ---
 
-## 🗣️ Recursos Explorados no Azure
+## 🗂️ Mineração de Conhecimento e Inteligência de Documentos
 
-- **Reconhecimento de Entidade Nomeada (NER)**
-- **Detecção de PII e PHI**
-- **Detecção de Idioma**
-- **Análise de Sentimentos**
-- **Respostas a Perguntas**
-- **Fala (Speech-to-Text e Text-to-Speech)**
-- **Tradução de Idiomas**
+### 🧾 Azure Document Intelligence
+
+**Serviços oferecidos:**
+- Análise de documentos estruturados e extração de regiões de interesse;
+- Treinamento de modelos personalizados com ao menos cinco amostras;
+- Reconhecimento semântico de campos em formulários (não apenas OCR).
+
+**Uso do Estúdio de Inteligência de Documentos:**
+- Interface no-code para testar modelos e explorar resultados;
+- Integração com recursos de IA do Azure.
+
+### 🔍 Azure Cognitive Search
+
+**Etapas do pipeline de mineração de conhecimento:**
+
+1. **Ingestão de dados:**
+   - Fontes como Azure Blob Storage, Data Lake ou Table Storage.
+
+2. **Enriquecimento com IA:**
+   - Aplicação de habilidades cognitivas para traduzir, extrair entidades e sentimentos;
+   - Geração de documentos enriquecidos prontos para indexação.
+
+3. **Criação e Exploração de Índices:**
+   - Indexação de conteúdo enriquecido;
+   - Pesquisa interativa em aplicações integradas;
+   - Visualizações e dashboards baseados nos dados minerados.
 
 ---
 
 ## 📝 Conclusão
 
-A prática com o Azure Speech Studio e Language Studio foi essencial para consolidar os conhecimentos adquiridos sobre IA aplicada à linguagem. Esta experiência prática não apenas reforçou o conteúdo teórico, mas também proporcionou uma visão mais clara do potencial dessas tecnologias no desenvolvimento de soluções inovadoras.
+Ao longo deste laboratório, aprofundei meus conhecimentos em IA aplicada à fala, linguagem natural, documentos e mineração de dados. As ferramentas da Azure mostraram-se poderosas e acessíveis, permitindo desde tarefas simples até a criação de fluxos completos de extração de conhecimento. Este repositório organiza todos os aprendizados e pode servir como base para futuras implementações em projetos reais.
+
+---
+
+## 🔗 Referências
+
+- [Azure Speech Studio](https://speech.microsoft.com/)
+- [Azure Language Studio](https://language.azure.com/)
+- [Azure Document Intelligence](https://learn.microsoft.com/pt-br/azure/ai-services/document-intelligence/)
+- [Azure Cognitive Search](https://learn.microsoft.com/pt-br/azure/search/)
+- [Documentação Microsoft AI](https://learn.microsoft.com/pt-br/azure/cognitive-services/)
